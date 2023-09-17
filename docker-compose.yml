@@ -2,7 +2,7 @@ version: '3'
 services:
   open-interpreter:
     build:
-      context: ~/open-interpreter-docker
+      context: open-interpreter-docker
       dockerfile: Dockerfile  # Use the Dockerfile from the cloned repository
     volumes:
       - ~/open-interpreter-docker:/root  # Mount the current directory to /root in the container
